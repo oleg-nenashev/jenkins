@@ -55,36 +55,25 @@ Upcoming changes</a>
 <!-- Record your changes in the trunk here. -->
 <div id="trunk" style="display:none"><!--=TRUNK-BEGIN=-->
 <ul class=image>
-  <li class=>
+  <li class=bug>
+    Search box did not work well inside folders.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-24433">issue 24433</a>)
+  <li class=rfe>
+    Advertised TCP slave agent port number is made tweakable.
 </ul>
 </div><!--=TRUNK-END=-->
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
+<h3><a name=v1.610>What's new in 1.610</a> (2015/04/19)</h3>
 <ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
-</ul>
-<h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
-<ul class=image>
-  <li class=>
+  <li class=bug>
+    Since 1.598 overrides of <code>Descriptor.getId</code> were not correctly handled by form binding, breaking at least the CloudBees Templates plugin.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26781">issue 26781</a>)
+  <li class=bug>
+    Archiving of large artifacts. Tar implementation cannot handle files having a size >8GB.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-10629">issue 10629</a>)
+  <li class=bug>
+    The queue state was not updated between scheduling builds.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-27708">issue 27708</a>,
+    <a href="https://issues.jenkins-ci.org/browse/JENKINS-27871">issue 27871</a>)
 </ul>
 <h3><a name=v1.609>What's new in 1.609</a> (2015/04/12)</h3>
 <ul class=image>
@@ -95,7 +84,6 @@ Upcoming changes</a>
   <li class=bug>
     Documentation for $BUILD_ID did not reflect current reality
     (<a href="https://issues.jenkins-ci.org/browse/JENKINS-26520">issue 26520</a>)
-  <li class=>
 </ul>
 <h3><a name=v1.608>What's new in 1.608</a> (2015/04/05)</h3>
 <ul class=image>
