@@ -26,7 +26,7 @@ jobs:
         uses: svenstaro/upload-release-action@v1-release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: changelog.yml
+          file: changelog.yaml
           asset_name: changelog.yaml
           tag: untagged-${{ github.ref }}
           overwrite: true
