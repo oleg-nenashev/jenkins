@@ -3,10 +3,9 @@
 name: Changelog Drafter
 
 on:
-  push:
-    # branches to consider in the event; optional, defaults to all
-    branches:
-      - master
+  create:
+    ref_type:
+      - tag
 
 jobs:
   update_draft_release:
@@ -15,9 +14,11 @@ jobs:
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - name: Generate GitHub Release Draft
         id: release-drafter
-        uses: release-drafter/release-drafter@v5.6.0
+        uses: oleg-nenashev/jenkins-release-drafter@input_ranges
         env:
           GITHUB_TOKEN: ${{ secrets.JENKINS_CHANGELOG_GENERATOR_TOKEN }}
+        with:
+          tag_name: ${{ ref }}
       # Generates a YAML changelog file using https://github.com/jenkinsci/jenkins-core-changelog-generator
       - name: Generate YAML changelog draft
         id: jenkins-core-changelog-generator
