@@ -18,7 +18,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             return context.payload.ref.replace(/\/refs\/tags\//, '');
-      - name: Echo
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - name: Generate GitHub Release Draft
         id: release-drafter
