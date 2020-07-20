@@ -1,10 +1,10 @@
-version: 1
-update_configs:
-- package_manager: "java:maven"
+version: 2
+updates:
+- package-ecosystem: "maven"
   directory: "/"
-  update_schedule: "weekly"
+  schedule:
+    interval: "weekly"
 
- # ignored_updates:
- #   - match:
- #       dependency_name: "org.jenkins-ci.main:jenkins-core"
- 
+#  ignore:
+#    - dependency-name: "org.jenkins-ci.main:jenkins-core"
+   
