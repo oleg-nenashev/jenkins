@@ -4,7 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: "weekly"
-
-#  ignore:
-#    - dependency-name: "org.jenkins-ci.main:jenkins-core"
-   
+  ignore:
+    - dependency-name: "org.springframework:spring-core"
+    - dependency-name: "org.springframework:spring-webmvc"
+    - dependency-name: "org.springframework:spring-aop"
